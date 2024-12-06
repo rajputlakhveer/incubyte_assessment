@@ -12,4 +12,8 @@ describe 'StringCalculator' do
   it 'returns number when one number string provided' do
     expect(StringCalculator.add("1,2,3")).to eq(6)
   end
+
+  it 'returns number when one number string provided' do
+    expect(StringCalculator.add("1\n2,3")).to eq(6)
+  end
 end
