@@ -5,7 +5,11 @@ describe 'StringCalculator' do
     expect(StringCalculator.add("")).to eq(0)
   end
 
-    it 'returns number when one number string provided' do
+  it 'returns number when one number string provided' do
     expect(StringCalculator.add("5")).to eq(5)
+  end
+
+  it 'returns number when one number string provided' do
+    expect(StringCalculator.add("1,2,3")).to eq(6)
   end
 end

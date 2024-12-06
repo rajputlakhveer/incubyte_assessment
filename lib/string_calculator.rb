@@ -1,5 +1,6 @@
 class StringCalculator
 	def self.add(numbers)
-		numbers.to_i
+		return 0 if numbers.empty?
+		numbers.split(',').map{|n| n.to_i }.inject(:+)
 	end
 end
